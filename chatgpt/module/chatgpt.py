@@ -1,11 +1,3 @@
-# Copyright (C) 2020-2023 TeamKillerX <https://github.com/TeamKillerX>
-#
-# This file is part of TeamKillerX project,
-# and licensed under GNU Affero General Public License v3.
-# See the GNU Affero General Public License for more details.
-#
-# All rights reserved. See COPYING, AUTHORS.
-#
 
 import requests
 import os
@@ -38,7 +30,7 @@ async def chatgpt(c: Client, m: Message):
     }
 
     json_data = {
-        "prompt": randydev,
+        "prompt": arjunarth,
         "model": "text-davinci-003",
         "temperature": 0.5,
         "max_tokens": 1024,

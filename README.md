@@ -20,7 +20,7 @@
 1. <b>Go to github, your fork</b>
 2. <b>Delete your fork. If you didn't fork, go to step</b>
 3. <b>Fork repo.</b>
-4. <b>edit</b> 👉 [config.py](https://github.com/TeamKillerX/chatgpt-bot/blob/main/config.py)
+4. <b>edit</b> 👉 [config.py](https://github.com/ekankth/chatgpt-bot/blob/main/config.py)
 5. <b>Go to heroku</b>
 6. <b>Desktop view</b>
 7. <b>Go to deploy tab</b>
@@ -28,38 +28,38 @@
 9. <b>Deploy Main branch.</b>
 
 ### Deploy to Heroku
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/TeamKillerX/chatgpt-bot)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/ekankth/chatgpt-bot)
 
 
 ### Tutorial Vps
 ```console
-Rendy@Ubuntu~ $ git clone https://github.com/TeamKillerX/chatgpt-bot
-Rendy@Ubuntu~ $ cd chatgpt-bot
-Rendy@Ubuntu~ $ pip3 install -r requirements.txt
-Rendy@Ubuntu~ $ nano config.py
-Rendy@Ubuntu~ $ python3 bot.py
+Ekankth@Ubuntu~ $ git clone https://github.com/ekankth/chatgpt-bot
+Ekankth@Ubuntu~ $ cd chatgpt-bot
+Ekankth@Ubuntu~ $ pip3 install -r requirements.txt
+Ekankth@Ubuntu~ $ nano config.py
+Ekankth@Ubuntu~ $ python3 bot.py
 ```
 
 ### Docker-Compose Vps
 ```console
-Rendy@Ubuntu~ $ sudo apt update -y && sudo apt upgrade -y
+Ekankth@Ubuntu~ $ sudo apt update -y && sudo apt upgrade -y
 
-Rendy@Ubuntu~ $ sudo apt-get install -y ca-certificates curl wget gnupg lsb-release
+Ekankth@Ubuntu~ $ sudo apt-get install -y ca-certificates curl wget gnupg lsb-release
 
-Rendy@Ubuntu~ $ sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+Ekankth@Ubuntu~ $ sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-Rendy@Ubuntu~ $ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+Ekankth@Ubuntu~ $ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-Rendy@Ubuntu~ $ sudo apt-get update -y && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-Rendy@Ubuntu~ $ mkdir chatgpt && cd chatgpt
-Rendy@Ubuntu~ $ wget https://raw.githubusercontent.com/TeamKillerX/chatgpt-bot/main/sample_config.env -O config.env && wget https://raw.githubusercontent.com/TeamKillerX/chatgpt-bot/main/docker-compose.yml
-Rendy@Ubuntu~ $ nano config.env 
+Ekankth@Ubuntu~ $ sudo apt-get update -y && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+Ekankth@Ubuntu~ $ mkdir chatgpt && cd chatgpt
+Ekankth@Ubuntu~ $ wget https://raw.githubusercontent.com/TeamKillerX/chatgpt-bot/main/sample_config.env -O config.env && wget https://raw.githubusercontent.com/TeamKillerX/chatgpt-bot/main/docker-compose.yml
+Ekankth@Ubuntu~ $ nano config.env 
 
 // Fill allvar for it to work //
 
-Rendy@Ubuntu~ $ docker-compose up -d
-Rendy@Ubuntu~ $ docker-compose start
-Rendy@Ubuntu~ $ docker-compose logs chatgpt
+Ekankth@Ubuntu~ $ docker-compose up -d
+Ekankth@Ubuntu~ $ docker-compose start
+Ekankth@Ubuntu~ $ docker-compose logs chatgpt
 ```
 
 ### Library
