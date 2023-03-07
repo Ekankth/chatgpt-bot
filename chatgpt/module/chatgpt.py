@@ -13,7 +13,7 @@ from config import OPENAI_API
 
 @ren.on_message(filters.command("ask") & filters.private | filters.group)
 async def chatgpt(c: Client, m: Message):
-    randydev = (
+    arjunarth = (
         m.text.split(None, 1)[1]
         if len(
             m.command,
@@ -21,7 +21,7 @@ async def chatgpt(c: Client, m: Message):
         != 1
         else None
     )
-    if not randydev:
+    if not arjunarth:
        await m.reply(f"use command <code>/{m.command[0]} [question]</code> to ask questions using the API.")
        return
     headers = {
